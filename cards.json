@@ -1,0 +1,55 @@
+[{
+  "_id": {
+    "$oid": "631b16d39fd9fb20294549fe"
+  },
+  "name": "Felix",
+  "text": "Ich bin raus"
+},{
+  "_id": {
+    "$oid": "631b16d39fd9fb20294549ff"
+  },
+  "name": "Fine",
+  "text": "Ich hab nur zwei Hände"
+},{
+  "_id": {
+    "$oid": "63207e752fea6d08477fef34"
+  },
+  "name": "Bene",
+  "text": "Könnte man nicht auch xyz... schreiben?",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63207e962fea6d08477fef36"
+  },
+  "name": "Juni",
+  "text": "Da ist ein Pull-request",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63207eb72fea6d08477fef38"
+  },
+  "name": "Andre",
+  "text": "Mein Mitbewohner schläft ",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63207ed42fea6d08477fef3b"
+  },
+  "name": "Doro",
+  "text": "Was mach ich hier?",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63207ee02fea6d08477fef3e"
+  },
+  "name": "a",
+  "text": "1",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63207eec2fea6d08477fef40"
+  },
+  "name": "b",
+  "text": "2",
+  "__v": 0
+}]

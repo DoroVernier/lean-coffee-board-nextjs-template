@@ -4,24 +4,35 @@ import styled from "styled-components";
 import Card from "../components/Card";
 import Form from "../components/Form";
 
-export default function Home() {
-  const [cardList, setCardList] = useState([]);
 
+import {getAllCards} from "../services/cardService"; 
+
+
+export async function getServerSideProps() {
+  const cards = await getAllCards(); 
+
+  return {
+    props: {cards: cards,
+    },
+  };
+}
+
+export default function Home({cards}) {
+  const [cardList, setCardList] = useState(cards);
   function addCard(newCard) {
     setCardList([newCard, ...cardList]);
   }
 
-  function removeCard(id) {
-    setCardList(cardList.filter((card) => card.id !== id));
+  async function removeCard(id) {
+    await fetch(`/api/card/${id}`, {
+      method: 'DELETE',
+    });
   }
 
   return (
     <BoardWrapper>
       <CardGrid>
-        <Card name="Niklas" text="Wie schreibe ich nochmal Imports?" />
-        <Card name="Lene" text="Können wir noch mehr Testing machen?!" />
-        <Card name="Merle" text="Wo ist mein Fahrrad?" />
-        <Card name="Thomas" text="Können wir Tailwind machen?" />
+       
         {cardList.map((card) => {
           return (
             <Card
